@@ -411,6 +411,18 @@
 .footer {
   max-width: 1110px;
   margin: 0 auto;
+  padding: 20px 0;
+}
+@media (max-width: 1440px) {
+  .footer {
+    max-width: 1140px;
+    padding: 25px 32px;
+  }
+}
+@media (max-width: 744px) {
+  .footer {
+    padding: 21px 24px;
+  }
 }
 .footer__company {
   display: flex;
@@ -424,9 +436,21 @@
   font-weight: 700;
   line-height: normal;
 }
+@media (max-width: 744px) {
+  .footer__company {
+    width: 188px;
+    margin: 0 auto 35px auto;
+  }
+}
 .footer__container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
+}
+@media (max-width: 744px) {
+  .footer__container {
+    flex-wrap: wrap;
+  }
 }
 .footer__contact {
   flex: 0 0 23%;
@@ -434,15 +458,31 @@
   flex-direction: column;
   gap: 10px;
 }
+@media (max-width: 744px) {
+  .footer__contact {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+}
 .footer__contact-item {
   font-size: 12px;
   line-height: normal;
+}
+@media (max-width: 744px) {
+  .footer__contact-item {
+    text-align: center;
+  }
 }
 .footer__list {
   flex: 0 0 20%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media (max-width: 744px) {
+  .footer__list {
+    flex: 0 0 27%;
+  }
 }
 .footer__list-title {
   font-size: 12px;
@@ -454,6 +494,80 @@
 .footer__list-item {
   font-size: 12px;
   line-height: normal;
+}
+.footer__form {
+  max-width: 505px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__form-title {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+}
+.footer__form-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.footer__form label {
+  display: none;
+}
+.footer__form-email {
+  background-color: transparent;
+  width: 90%;
+  max-width: 100%;
+  padding: 12px 25px;
+  font-size: 12px;
+  line-height: normal;
+  border-bottom: 1px solid #ffffff;
+}
+.footer__form-email::placeholder {
+  color: #ffffff;
+}
+.footer__form-submit {
+  padding: 8px 15px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: normal;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.footer__form-check {
+  padding: 13px 16px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer__form-check-field {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+}
+.footer__form-check-text {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: normal;
+}
+.footer__form-subtitle {
+  text-align: center;
+  font-size: 12px;
+  line-height: normal;
+}
+.footer__socials {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.footer__socials-item {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

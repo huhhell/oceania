@@ -414,6 +414,16 @@
 .footer {
   max-width: 1110px;
   margin: 0 auto;
+  padding: 20px 0;
+  
+  @media (max-width: 1440px) {
+    max-width: 1140px;
+    padding: 25px 32px;
+  }
+  
+  @media (max-width: 744px) {
+    padding: 21px 24px;
+  }
 
   &__company {
     display: flex;
@@ -429,11 +439,21 @@
       font-weight: 700;
       line-height: normal;
     }
+    
+    @media (max-width: 744px) {
+      width: 188px;
+      margin: 0 auto 35px auto;
+    }
   }
 
   &__container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+    
+    @media (max-width: 744px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__contact {
@@ -441,11 +461,20 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    @media (max-width: 744px) {
+      flex: 0 0 100%;
+      margin-bottom: 30px;
+    }
   }
 
   &__contact-item {
     font-size: 12px;
     line-height: normal;
+    
+    @media (max-width: 744px) {
+      text-align: center;
+    }
   }
 
   &__list {
@@ -453,6 +482,10 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
+    @media (max-width: 744px) {
+      flex: 0 0 27%;
+    }
 
     &-title {
       font-size: 12px;
@@ -467,4 +500,85 @@
       line-height: normal;
     }
   }
+
+  &__form {
+    max-width: 505px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-title {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    &-field {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    label {
+      display: none;
+    }
+    &-email {
+      background-color: transparent;
+      width: 90%;
+      max-width: 100%;
+      padding: 12px 25px;
+      font-size: 12px;
+      line-height: normal;
+      border-bottom: 1px solid #ffffff;
+
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+    &-submit {
+      padding: 8px 15px;
+      color: #ffffff;
+      font-size: 12px;
+      line-height: normal;
+      background-color: transparent;
+      border: 1px solid #fff;
+    }
+    &-check {
+      padding: 13px 16px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    &-check-field {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ffffff;
+    }
+    &-check-text {
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: normal;
+    }
+    &-subtitle {
+      text-align: center;
+      font-size: 12px;
+      line-height: normal;
+    }
+  }
+
+  &__socials {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    &-item {
+      padding: 10px;
+    }
+  }
+
 }
