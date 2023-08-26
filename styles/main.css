@@ -334,5 +334,126 @@
     display: block;
   }
 }
+.feedback {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+@media (max-width: 1440px) {
+  .feedback {
+    padding: 100px 32px;
+  }
+}
+@media (max-width: 1024px) {
+  .feedback {
+    padding: 50px 24px;
+  }
+}
+.feedback__title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+.feedback__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .feedback__items {
+    margin-bottom: 40px;
+  }
+}
+.feedback__item {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  background: rgba(38, 44, 49, 0.25);
+  backdrop-filter: blur(12.5px);
+  padding: 30px 25px;
+}
+@media (max-width: 1024px) {
+  .feedback__item {
+    flex: 0 0 45%;
+  }
+}
+@media (max-width: 744px) {
+  .feedback__item {
+    flex: 0 0 100%;
+  }
+}
+.feedback__item-text {
+  text-align: center;
+  font-size: 21px;
+  line-height: normal;
+}
+.feedback__item-name {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+@media (max-width: 1024px) {
+  .feedback__item-hide1 {
+    display: none;
+  }
+}
+@media (max-width: 744px) {
+  .feedback__item-hide2 {
+    display: none;
+  }
+}
+
+.footer {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.footer__company {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 35px;
+}
+.footer__company-name {
+  color: #D9D9D9;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__contact {
+  flex: 0 0 23%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__contact-item {
+  font-size: 12px;
+  line-height: normal;
+}
+.footer__list {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__list-title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffffff;
+}
+.footer__list-item {
+  font-size: 12px;
+  line-height: normal;
+}
 
 /*# sourceMappingURL=main.css.map */
