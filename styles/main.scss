@@ -23,6 +23,10 @@
   @media (max-width: 1440px) {
     padding: 45px 32px;
   }
+  
+  @media (max-width: 1024px) {
+    padding: 15px 24px;
+  }
 
   &__company {
     display: flex;
@@ -118,7 +122,7 @@
     }
 
     @media (max-width: 744px) {
-      padding: 50px 24px;
+      padding: 24px 30px;
     }
   }
 

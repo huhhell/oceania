@@ -24,6 +24,11 @@
     padding: 45px 32px;
   }
 }
+@media (max-width: 1024px) {
+  .nav {
+    padding: 15px 24px;
+  }
+}
 .nav__company {
   display: flex;
   align-items: center;
@@ -120,7 +125,7 @@
 }
 @media (max-width: 744px) {
   .info__left {
-    padding: 50px 24px;
+    padding: 24px 30px;
   }
 }
 .info__title {
